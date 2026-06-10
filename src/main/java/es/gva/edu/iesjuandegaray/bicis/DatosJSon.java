@@ -4,6 +4,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.*;
 import org.apache.http.util.EntityUtils;
 import org.json.*;
+import java.util.Locale;
 
 public class DatosJSon {
     private static String API_URL;
@@ -59,7 +60,7 @@ public class DatosJSon {
                     + " | Total: " + total
                     + " | GPS: " + lat + ", " + lon + "\n";
 
-                values[i] = String.format(
+                values[i] = String.format(Locale.US,
                     "INSERT IGNORE INTO estaciones(address,available,free,total,lat,lon) "
                     + "VALUES('%s',%d,%d,%d,%.6f,%.6f)",
                     address.replace("'","''"), available, free, total, lat, lon);

@@ -19,9 +19,9 @@ public class ConexionBDD extends JFrame {
 
     private static final String driver = "com.mysql.cj.jdbc.Driver";
     private static final String user   = "admin";
-    private static final String pass   = "TuPasswordAWS";
+    private static final String pass   = "123456789";
     private static final String url    =
-        "jdbc:mysql://valenbicibd.cxxxxxxx.eu-west-1.rds.amazonaws.com:3306/valenbicibd"
+        "jdbc:mysql://databasdmp6.cy5fb8q1fdr7.us-east-1.rds.amazonaws.com:3306/valenbicibd"
         + "?useSSL=true&requireSSL=false&serverTimezone=UTC";
 
     public static void main(String[] args) {
